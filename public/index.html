@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>時間割</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./timetable.css">
+
+    <script defer src="/__/firebase/7.17.1/firebase-app.js" type="module"></script>
+    <script defer src="/__/firebase/7.17.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.17.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <h1>時間割管理ツール</h1>
+        <button class="btn btn-secondary my-2 my-sm-0" type="button" id="signout">signout</button>
+    </nav>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div id="addSub" class="form-row align-items-center col-auto">
+                <h2 class="col-12">教科登録</h2>
+                <div class="form-group col-auto">
+                    <label for="dotw">曜日</label>
+                    <span class="badge badge-danger">必須</span>
+                    <select name="dotw" id="dotwSub" class="form-control"> </select>
+                </div>
+                <div class="form-group col-auto">
+                    <label for="period">時間</label>
+                    <span class="badge badge-danger">必須</span>
+                    <select name="period" id="periodSub" class="form-control"> </select>
+                </div>
+                <div class="form-group col-auto">
+                    <label for="name">教科名</label>
+                    <input name="name" id="nameSub" class="form-control" maxlength="10" placeholder="削除するときは空欄"></input>
+                </div>
+                <div class="form-group col-auto">
+                    <label for="remarkSub">備考</label>
+                    <input name="remarks" id="remarksSub" class="form-control" maxlength="10" placeholder=""></input>
+                </div>
+                <div class="form-group col-12">
+                    <button id="updateSub" class="btn btn-primary">教科追加</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <table id="table" class="table table-border"></table>
+    </div>
+    <script defer src="./timetable.js"></script>
+</body>

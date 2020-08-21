@@ -1,0 +1,35 @@
+body {
+	background-color: black;
+	color: whitesmoke;
+	margin: 0 5%;
+}
+
+.table,
+tr,
+td {
+	border: 2px solid gray;
+}
+
+.table {
+	color: whitesmoke;
+	text-align: center;
+	table-layout: fixed;
+	word-break: break-all;
+}
+
+td p {
+	margin: 0;
+}
+
+.nameSub {
+	font-weight: bold;
+	font-size: 130%;
+}
+
+.remarksSub {
+	font-size: 100%;
+}
+
+.period {
+	width: 3em;
+}

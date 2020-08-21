@@ -1,0 +1,24 @@
+{
+  "name": "timetable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "firebase-tools": "^8.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "firebase":"firebase"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totto2727/Timetable-Firebase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/totto2727/Timetable-Firebase/issues"
+  },
+  "homepage": "https://github.com/totto2727/Timetable-Firebase#readme"
+}
