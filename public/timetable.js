@@ -139,7 +139,7 @@ function writeSub(subject) {
 
 function writeAllSub(data) {
     for (key in data) {
-        if (data[key].period <= data.period && data[key].dotw <= data.dotw && data[key]['name'] && data[key]['remarks']) {
+        if (data[key].period <= data.period && data[key].dotw <= data.dotw && data[key].name && data[key].period) {
             writeSub(data[key]);
         }
     }
