@@ -1,4 +1,4 @@
-//import { } from "firebase";
+//import {} from "firebase";
 
 const dotws = { 1: "月", 2: "火", 3: "水", 4: "木", 5: "金", 6: "土", 8: "日" };
 const au = firebase.auth();
@@ -58,7 +58,7 @@ function updateSub() {
 
 
 async function dataRequest(uid) {
-    let data = await collection.doc(uid).get().catch(e => errorMessage(e))
+    let data = await collection.doc(uid).get();
     if (!(data = data.data())) {
         data = await template.get().catch(e => errorMessage(e))
         data = data.data();
